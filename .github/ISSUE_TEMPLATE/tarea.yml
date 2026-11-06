@@ -1,0 +1,40 @@
+name: Tarea del sprint
+description: Trabajo acotado para un programador o agente.
+title: "[FL-XX] "
+body:
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Resultado esperado
+      description: Explica un comportamiento concreto y el motivo.
+    validations:
+      required: true
+  - type: textarea
+    id: alcance
+    attributes:
+      label: Archivos permitidos y responsable
+      description: Indica carpetas, propietario humano o agente, rama y revisor.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencias
+    attributes:
+      label: Contrato y dependencias
+      description: Referencia docs/02_CONTRATO_Y_ALCANCE.md y tareas previas.
+    validations:
+      required: true
+  - type: textarea
+    id: aceptacion
+    attributes:
+      label: Criterios de aceptacion
+      description: Casos observables; incluir errores y como verificarlos.
+    validations:
+      required: true
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia requerida
+      description: Comando, pruebas, respuesta XML o captura de Boomerang que debe entregar.
+    validations:
+      required: true
+

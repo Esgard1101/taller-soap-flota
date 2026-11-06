@@ -1,0 +1,26 @@
+# Maven y compilacion
+target/
+*.class
+*.log
+
+# Configuracion privada por equipo
+config/local.ps1
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+**/passwordfile*
+**/password-file*
+
+# IDE: conservar pom.xml y nb-configuration.xml compartidos
+nbproject/private/
+.idea/
+.vscode/
+*.iml
+nbactions-private.xml
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
+
