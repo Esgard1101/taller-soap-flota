@@ -1,13 +1,13 @@
 # Flota vehicular SOAP
 
-Base de trabajo del escenario 04 de ProgramaciÃ³n de Aplicaciones Distribuidas.
+Base de trabajo del escenario 04 de Programación de Aplicaciones Distribuidas.
 Proyecto Maven WAR para NetBeans 30+, Temurin JDK 21 y Payara Community 7.x.
-El API de compilaciÃ³n es `jakarta.jakartaee-api:10.0.0` con alcance `provided`.
+El API de compilación es `jakarta.jakartaee-api:10.0.0` con alcance `provided`.
 
-**Estado:** base y metodologÃ­a preparadas. El CRUD, el endpoint y sus pruebas todavÃ­a
-no estÃ¡n implementados. El WAR inicial solo valida la estructura de compilaciÃ³n.
+**Estado:** base y metodología preparadas. El CRUD, el endpoint y sus pruebas todavía
+no están implementados. El WAR inicial solo valida la estructura de compilación.
 
-## CÃ³mo empezar
+## Cómo empezar
 
 1. Abrir esta carpeta en NetBeans con **File > Open Project**.
 2. Registrar JDK 21 y seleccionar Payara 7.x en las propiedades del proyecto.
@@ -15,17 +15,17 @@ no estÃ¡n implementados. El WAR inicial solo valida la estructura de compilaci
 4. En PowerShell, ejecutar `.\scripts\verify.ps1`.
 5. Seguir el backlog; obtener y verificar el WSDL antes de preparar la demo.
 
-TambiÃ©n se puede compilar con `mvn --batch-mode --no-transfer-progress verify`.
+También se puede compilar con `mvn --batch-mode --no-transfer-progress verify`.
 El resultado se genera en `target/taller_soap_flota.war`.
 
-## GuÃ­as del equipo
+## Guías del equipo
 
-| Documento | Para quÃ© sirve |
+| Documento | Para qué sirve |
 | --- | --- |
 | [Arquitectura y Laravel](docs/01_ARQUITECTURA_Y_LARAVEL.md) | Traducir tus conocimientos de backend a Java Web. |
 | [Contrato y alcance](docs/02_CONTRATO_Y_ALCANCE.md) | Firmas y decisiones comunes antes de repartir tareas. |
-| [MetodologÃ­a GitHub](docs/03_METODOLOGIA_GITHUB.md) | Issues, ramas, PR, worktrees y entrega entre agentes. |
-| [Backlog y sprints](docs/04_BACKLOG_Y_SPRINTS.md) | Orden, dependencias, responsables y aceptaciÃ³n. |
+| [Metodología GitHub](docs/03_METODOLOGIA_GITHUB.md) | Issues, ramas, PR, worktrees y entrega entre agentes. |
+| [Backlog y sprints](docs/04_BACKLOG_Y_SPRINTS.md) | Orden, dependencias, responsables y aceptación. |
 | [Demo Boomerang](docs/05_DEMO_BOOMERANG.md) | Secuencia de pruebas y evidencias del caso. |
 | [Entorno](docs/06_ENTORNO.md) | Maven, NetBeans, JDK y Payara. |
 | [Instrucciones para agentes](AGENTS.md) | Reglas compartidas del repositorio. |
@@ -38,17 +38,17 @@ Requiere tres colaboradores y el entorno preparado; ver la metodología.
 
 ## Flujo propuesto
 
-`Issue -> rama y carpeta propias -> implementaciÃ³n -> mvn verify -> PR -> revisiÃ³n -> main -> demo`
+`Issue -> rama y carpeta propias -> implementación -> mvn verify -> PR -> revisión -> main -> demo`
 
-TÃº eres el integrador. Un colaborador se hace responsable de cada tarea.
+Tú eres el integrador. Un colaborador se hace responsable de cada tarea.
 La CI preparada compila y ejecuta las pruebas que existan; no inicia Payara.
-Una compilaciÃ³n exitosa no demuestra que las operaciones SOAP funcionen.
+Una compilación exitosa no demuestra que las operaciones SOAP funcionen.
 
 ## Entregable del curso
 
-Cinco operaciones SOAP sobre una lista estÃ¡tica de vehÃ­culos, IDs autoincrementales,
+Cinco operaciones SOAP sobre una lista estática de vehículos, IDs autoincrementales,
 historial de mantenimientos y SOAP Fault para buscar, actualizar o eliminar IDs
-inexistentes. Se entregan el cÃ³digo Maven, la URL WSDL y capturas de Boomerang.
+inexistentes. Se entregan el código Maven, la URL WSDL y capturas de Boomerang.
 
-El PDF del enunciado permanece fuera del repositorio. Las decisiones de diseÃ±o
+El PDF del enunciado permanece fuera del repositorio. Las decisiones de diseño
 adicionales se identifican en el contrato y pueden ajustarse antes de implementar.
