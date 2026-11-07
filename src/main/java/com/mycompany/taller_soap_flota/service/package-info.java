@@ -1,6 +1,6 @@
 /**
  * Punto de entrada SOAP FlotaWS.
- * Implementacion pendiente del sprint correspondiente.
+ * Delega los casos de uso mediante la interfaz FlotaApplication.
  */
 package com.mycompany.taller_soap_flota.service;
 
