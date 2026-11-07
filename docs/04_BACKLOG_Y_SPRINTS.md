@@ -57,8 +57,8 @@ en esta sesión. Evitar que cada agente modifique pom.xml por separado.
 ## Orden de integración
 
 1. FL-03 en main y difusión del commit base.
-2. Abrir worktrees A/B/C desde ese commit.
-3. Revisar e integrar FL-04, FL-05 y FL-06.
+2. Actualizar los clones independientes de A/B/C en main con ese commit.
+3. Revisar los commits directos de FL-04, FL-05 y FL-06 en main.
 4. Ejecutar verify y desplegar el WAR integrado.
 5. Ejecutar FL-08 con la secuencia de Boomerang.
 
@@ -73,3 +73,5 @@ Se incorporan como historias futuras cuando el alcance lo requiera.
 Registrar tres datos: qué se terminó, qué sigue abierto y qué cambiar en la
 siguiente sesión. Una mejora suficiente: reducir un conflicto, aclarar una
 firma o automatizar un paso que consumió tiempo.
+
+Acuerdo vigente: [TAREAS_EQUIPO.md](../TAREAS_EQUIPO.md). Se usan commits y push directos a main; no se exige PR.

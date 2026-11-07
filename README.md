@@ -7,6 +7,8 @@ El API de compilación es `jakarta.jakartaee-api:10.0.0` con alcance `provided`.
 **Estado:** base y metodología preparadas. El CRUD, el endpoint y sus pruebas todavía
 no están implementados. El WAR inicial solo valida la estructura de compilación.
 
+Guía vigente del equipo: [TAREAS_EQUIPO.md](TAREAS_EQUIPO.md), con commits directos a main.
+
 ## Cómo empezar
 
 1. Abrir esta carpeta en NetBeans con **File > Open Project**.
@@ -24,7 +26,7 @@ El resultado se genera en `target/taller_soap_flota.war`.
 | --- | --- |
 | [Arquitectura y Laravel](docs/01_ARQUITECTURA_Y_LARAVEL.md) | Traducir tus conocimientos de backend a Java Web. |
 | [Contrato y alcance](docs/02_CONTRATO_Y_ALCANCE.md) | Firmas y decisiones comunes antes de repartir tareas. |
-| [Metodología GitHub](docs/03_METODOLOGIA_GITHUB.md) | Issues, ramas, PR, worktrees y entrega entre agentes. |
+| [Metodología GitHub](docs/03_METODOLOGIA_GITHUB.md) | Clones independientes, commits directos y coordinación entre agentes. |
 | [Backlog y sprints](docs/04_BACKLOG_Y_SPRINTS.md) | Orden, dependencias, responsables y aceptación. |
 | [Demo Boomerang](docs/05_DEMO_BOOMERANG.md) | Secuencia de pruebas y evidencias del caso. |
 | [Entorno](docs/06_ENTORNO.md) | Maven, NetBeans, JDK y Payara. |
@@ -38,7 +40,7 @@ Requiere tres colaboradores y el entorno preparado; ver la metodología.
 
 ## Flujo propuesto
 
-`Issue -> rama y carpeta propias -> implementación -> mvn verify -> PR -> revisión -> main -> demo`
+`Issue -> clon propio en main -> implementación -> verify -> commit -> pull --rebase -> push -> revisión -> demo`
 
 Tú eres el integrador. Un colaborador se hace responsable de cada tarea.
 La CI preparada compila y ejecuta las pruebas que existan; no inicia Payara.

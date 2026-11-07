@@ -6,13 +6,17 @@ Maven WAR y jakarta.jakartaee-api 10.0.0 con scope provided.
 La base inicial contiene estructura y documentacion; el CRUD esta pendiente.
 
 ## Leer antes de implementar
+- TAREAS_EQUIPO.md (acuerdo vigente: commits directos a main)
 - README.md
 - docs/02_CONTRATO_Y_ALCANCE.md
 - docs/03_METODOLOGIA_GITHUB.md
 - La issue asignada y sus dependencias.
 
 ## Reglas para colaborar
-- Una tarea, una rama y una carpeta de trabajo por colaborador.
+- Para esta sesion: un clon independiente por colaborador; todos trabajan en main.
+- Validar, hacer commit de archivos propios, pull --rebase origin main y push origin main.
+- No crear ramas de tarea ni exigir PR en esta sesion; el integrador revisa los commits.
+- No usar push --force ni editar simultaneamente desde un mismo clon.
 - Respetar los archivos asignados. Coordinar dependencias compartidas con el integrador.
 - Para cambiar firmas, parametros, namespaces o retornos, actualizar el contrato y comunicar el impacto.
 - Mantener FlotaWS en service y Vehiculo en model.
