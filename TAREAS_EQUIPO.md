@@ -48,6 +48,9 @@ enunciado no detalla. Son el acuerdo de implementación del equipo.
 **Issue:** [FL-03 / #1](https://github.com/Esgard1101/taller-soap-flota/issues/1).
 **Antes de A, B y C.**
 
+**Estado:** base común implementada y validada con cuatro pruebas.
+Actualizar main antes de iniciar las tareas A, B y C.
+
 Crear:
 
 - `model/Vehiculo.java`: implements Serializable, constructor vacío,

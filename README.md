@@ -4,8 +4,9 @@ Base de trabajo del escenario 04 de Programación de Aplicaciones Distribuidas.
 Proyecto Maven WAR para NetBeans 30+, Temurin JDK 21 y Payara Community 7.x.
 El API de compilación es `jakarta.jakartaee-api:10.0.0` con alcance `provided`.
 
-**Estado:** base y metodología preparadas. El CRUD, el endpoint y sus pruebas todavía
-no están implementados. El WAR inicial solo valida la estructura de compilación.
+**Estado:** modelo, interfaces de repositorio/aplicación y excepción común implementados.
+La base incluye cuatro pruebas de serialización XML/Java y del detalle del Fault.
+Las implementaciones CRUD y el endpoint quedan para los colaboradores A, B y C.
 
 Guía vigente del equipo: [TAREAS_EQUIPO.md](TAREAS_EQUIPO.md), con commits directos a main.
 

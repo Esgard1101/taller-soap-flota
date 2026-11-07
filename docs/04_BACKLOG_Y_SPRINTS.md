@@ -5,7 +5,7 @@
 - [x] FL-01: base Maven WAR con Java 21 y Jakarta EE API 10.0.0 provided.
 - [x] FL-02: arquitectura, contrato propuesto, reglas de agentes y plantillas.
 - [x] Repositorio público creado: https://github.com/Esgard1101/taller-soap-flota
-- [ ] Integrar las clases e interfaces comunes antes del trabajo paralelo.
+- [x] Integrar las clases e interfaces comunes antes del trabajo paralelo (FL-03).
 - [ ] Implementar y comprobar el CRUD real.
 
 Los tiempos siguientes son posiciones dentro de una sesión de una hora,

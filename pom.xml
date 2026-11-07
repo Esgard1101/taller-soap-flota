@@ -14,6 +14,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.release>21</maven.compiler.release>
         <jakartaee.version>10.0.0</jakartaee.version>
+        <junit.version>5.11.4</junit.version>
+        <jaxb.runtime.version>4.0.5</jaxb.runtime.version>
     </properties>
 
     <dependencies>
@@ -22,6 +24,18 @@
             <artifactId>jakarta.jakartaee-api</artifactId>
             <version>${jakartaee.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>${jaxb.runtime.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

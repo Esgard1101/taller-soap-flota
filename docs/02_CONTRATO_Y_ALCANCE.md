@@ -1,8 +1,12 @@
-# Contrato y alcance v0.1
+# Contrato y alcance v1.0
 
 Este acuerdo permite repartir el trabajo. Es una propuesta del equipo basada en
 el PDF, no un WSDL escrito a mano. El enfoque obligatorio es **code-first**:
 Java y sus anotaciones producen el WSDL; se comprueba el resultado en Payara.
+
+Las firmas ya están declaradas en VehiculoRepository y FlotaApplication.
+Vehiculo, VehiculoFault y VehiculoNoEncontradoException forman la base común
+implementada. Los nombres del endpoint se verificarán cuando se implemente FlotaWS.
 
 ## Requisitos del enunciado
 
@@ -93,9 +97,9 @@ se comprueba el elemento Fault y su namespace, no el texto literal del prefijo.
 
 ## Antes de repartir
 
-- [ ] Integrar modelo, excepción, detalle de Fault e interfaz de repositorio.
-- [ ] Fijar nombres, entradas, retornos y firmas del servicio de aplicación.
-- [ ] Conseguir build reproducible para todos los colaboradores.
+- [x] Integrar modelo, excepción, detalle de Fault e interfaz de repositorio.
+- [x] Fijar nombres, entradas, retornos y firmas del servicio de aplicación.
+- [x] Conseguir build Maven con cuatro pruebas de serialización correctas.
 - [ ] Asignar propietario de cada archivo compartido.
 
 Al finalizar el endpoint, guardar WSDL y todos sus XSD importados en `contracts/`.
